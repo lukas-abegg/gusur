@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "685760890513",
+    "project_id": "gusur-57e95",
+    "storage_bucket": "gusur-57e95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685760890513:android:5fad46a9b9bdcc7834e130",
+        "android_client_info": {
+          "package_name": "com.gusur.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARyXedp_4HR5Ke1VHzlFHOCXWqmRiKstM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

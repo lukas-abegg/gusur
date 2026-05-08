@@ -1,0 +1,48 @@
+# Curated Saunagus schedule.
+#
+# Hand-edited weekly. Each top-level key under `schedules` is a place_id (must
+# match the place's id in places.json — usually the venue name as it appears on
+# reykjavik.is). When a place is listed here, its events are real (created_by
+# "scraper:curated") and override the synthetic events main.py would otherwise
+# generate. Places NOT listed keep getting synthetic placeholders so the app
+# always has something to show.
+#
+# Two ways to add events:
+#   recurring:  weekday + time pattern, expanded for the next 14 days
+#   one_offs:   specific dated sessions (overrides for guest meisters, holidays, etc.)
+#
+# Common fields (apply to all events for a place; can be overridden per-rule):
+#   description     | one-line summary shown on event detail
+#   sauna_meister   | name displayed under "Sauna Meister"
+#   style           | freeform tag (Traditional, Aromatic, Contrast, …)
+#   heat_level      | integer 0–100 (90 = standard hot)
+#   length_minutes  | integer
+#   scents          | list of strings shown to attendees
+#   price           | float, in `currency` (default ISK 1330)
+
+schedules: {}
+  # ----- Example template — uncomment and edit as you learn schedules -----
+  #
+  # Vesturbæjarlaug:
+  #   description: "Birch + chamomile rotation. Drumming on Fridays."
+  #   sauna_meister: "Anna Þórsdóttir"
+  #   style: "Aromatic"
+  #   heat_level: 95
+  #   recurring:
+  #     - days: [mon, wed, fri]
+  #       times: ["18:00", "19:00"]
+  #     - days: [sat]
+  #       times: ["11:00"]
+  #       sauna_meister: "Birta Pálsdóttir"
+  #       style: "Contrast"
+  #   one_offs:
+  #     - date: "2026-05-24"
+  #       time: "20:00"
+  #       sauna_meister: "Guest: Kris Veen"
+  #       style: "Special"
+  #       scents: ["Birch", "Mint"]
+  #
+  # Sundhöll Reykjavíkur:
+  #   recurring:
+  #     - days: [tue, thu]
+  #       times: ["19:00", "20:00"]

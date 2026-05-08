@@ -1,0 +1,172 @@
+rules_version = '2';
+
+// Gusur — Firestore security rules
+//
+// Trust model:
+//   - Reads are mostly public so unauthenticated visitors can browse places & events.
+//     Sensitive collections (reports moderation queue) are admin-only.
+//   - Writes always require a signed-in user.
+//   - User-owned docs (ratings, attendances, follows, profiles) require user_id == auth.uid.
+//   - Place/event creation + deletion is admin-only. Place updates also allowed for the
+//     place's maintainer_user_id; event updates by maintainer of the linked place.
+//   - Admin gating uses verified email today (matching the in-app check). When you have
+//     more than one admin, switch to Firebase custom claims (`request.auth.token.admin`)
+//     and a one-shot Admin-SDK script that grants the claim per uid.
+//
+// Reminder: Firebase Admin SDK (used by scraper/upload.py) bypasses these rules entirely.
+// That's why upload.py works regardless of the rules below.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // -------- Helpers --------
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email == 'lukas.abegg1@gmail.com';
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function placeMaintainer(placeId) {
+      return get(/databases/$(database)/documents/places/$(placeId)).data.maintainer_user_id;
+    }
+
+    function isMaintainerOf(placeId) {
+      return isSignedIn()
+        && exists(/databases/$(database)/documents/places/$(placeId))
+        && placeMaintainer(placeId) == request.auth.uid;
+    }
+
+    // Common shape for user-owned docs: the writer must claim themselves as user_id.
+    function writerOwnsResource() {
+      return isSignedIn()
+        && request.resource.data.user_id == request.auth.uid;
+    }
+
+    // -------- Places --------
+    match /places/{placeId} {
+      allow read: if true;
+
+      allow create, delete: if isAdmin();
+
+      // Maintainer can update their own place; admin can update any place.
+      // The maintainer_user_id field can only be changed by admin (so a maintainer
+      // can't transfer the place to themselves or someone else).
+      allow update: if isAdmin()
+        || (isMaintainerOf(placeId)
+            && request.resource.data.maintainer_user_id == resource.data.maintainer_user_id);
+    }
+
+    // -------- Events --------
+    match /events/{eventId} {
+      allow read: if true;
+
+      allow create, delete: if isAdmin()
+        || (isSignedIn()
+            && exists(/databases/$(database)/documents/places/$(request.resource.data.place_id))
+            && placeMaintainer(request.resource.data.place_id) == request.auth.uid);
+
+      // Maintainer of the linked place can update the event; can't move the event
+      // to a different place they don't maintain.
+      allow update: if isAdmin()
+        || (isSignedIn()
+            && resource.data.place_id == request.resource.data.place_id
+            && exists(/databases/$(database)/documents/places/$(resource.data.place_id))
+            && placeMaintainer(resource.data.place_id) == request.auth.uid);
+    }
+
+    // -------- Ratings --------
+    match /ratings/{ratingId} {
+      allow read: if true;
+
+      // Writer must claim themselves; can't impersonate someone else.
+      allow create: if writerOwnsResource()
+        && request.resource.data.heat_management is int
+        && request.resource.data.heat_management >= 1
+        && request.resource.data.heat_management <= 7;
+
+      // Edit/delete your own; admin can also delete (moderation).
+      allow update: if isOwner(resource.data.user_id)
+        && request.resource.data.user_id == resource.data.user_id
+        && request.resource.data.place_id == resource.data.place_id;
+      allow delete: if isOwner(resource.data.user_id) || isAdmin();
+    }
+
+    // -------- Attendances (RSVP + check-in) --------
+    match /attendances/{attendanceId} {
+      allow read: if true;
+
+      allow create: if writerOwnsResource()
+        && request.resource.data.status in ['going', 'attended'];
+
+      // Update your own attendance (e.g. going → attended on check-in).
+      // user_id can never change.
+      allow update: if isOwner(resource.data.user_id)
+        && request.resource.data.user_id == resource.data.user_id
+        && request.resource.data.status in ['going', 'attended'];
+
+      allow delete: if isOwner(resource.data.user_id);
+    }
+
+    // -------- Follows --------
+    match /follows/{followId} {
+      allow read: if true;
+
+      allow create: if writerOwnsResource();
+      allow delete: if isOwner(resource.data.user_id);
+      allow update: if false;  // follows are immutable; toggle is create or delete
+    }
+
+    // -------- Reports --------
+    match /reports/{reportId} {
+      // Moderation queue is admin-only.
+      allow read: if isAdmin();
+
+      // Anyone signed in can submit a report; user_id must match, status starts open.
+      allow create: if writerOwnsResource()
+        && request.resource.data.status == 'open'
+        && request.resource.data.target_type in ['place', 'event']
+        && request.resource.data.reason in [
+            'closed', 'wrong_info', 'duplicate', 'inappropriate', 'suggest_edit', 'other'
+        ];
+
+      // Admin resolves / re-opens.
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // -------- Profiles --------
+    match /profiles/{userId} {
+      // Profiles are public so reviewer names render on review cards.
+      allow read: if true;
+
+      allow create: if isOwner(userId)
+        && request.resource.data.id == userId;
+
+      // You can edit your own profile, but you cannot grant yourself counter fields
+      // that no longer exist in the model (defense in depth — the schema evolved
+      // away from stored counters, but old documents may still have them).
+      allow update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // -------- Legacy infusions --------
+    // Pre-step-1 schema; only the migration tool reads/writes here.
+    match /infusions/{infusionId} {
+      allow read, write: if isAdmin();
+    }
+
+    // -------- Default deny --------
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

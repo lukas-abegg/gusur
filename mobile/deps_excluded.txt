@@ -1,0 +1,503 @@
+
+> Task :composeApp:dependencies
+
+------------------------------------------------------------
+Project ':composeApp'
+------------------------------------------------------------
+
+desktopRuntimeClasspath - Runtime classpath of desktop/main.
++--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23
+|    +--- org.jetbrains:annotations:13.0 -> 23.0.0
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0 -> 1.9.23 (c)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0 -> 1.9.23 (c)
++--- org.jetbrains.compose.runtime:runtime:1.6.1
+|    \--- org.jetbrains.compose.runtime:runtime-desktop:1.6.1
+|         +--- org.jetbrains.compose.collection-internal:collection:1.6.1
+|         |    \--- androidx.collection:collection:1.4.0
+|         |         \--- androidx.collection:collection-jvm:1.4.0
+|         |              +--- androidx.annotation:annotation:1.7.0 -> 1.7.1
+|         |              |    \--- androidx.annotation:annotation-jvm:1.7.1
+|         |              |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.7.10 -> 1.9.23 (*)
+|         |              \--- org.jetbrains.kotlin:kotlin-stdlib:1.8.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         +--- org.jetbrains.kotlinx:atomicfu:0.23.2
+|         |    \--- org.jetbrains.kotlinx:atomicfu-jvm:0.23.2
+|         |         \--- org.jetbrains.kotlin:kotlin-stdlib:{prefer 1.9.21} -> 1.9.23 (*)
+|         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0
+|              \--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0
+|                   +--- org.jetbrains:annotations:23.0.0
+|                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.8.0
+|                   |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0 (c)
+|                   |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (c)
+|                   |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.8.0 (c)
+|                   |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.0 (c)
+|                   |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.8.0 (c)
+|                   \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
++--- org.jetbrains.compose.foundation:foundation:1.6.1
+|    \--- org.jetbrains.compose.foundation:foundation-desktop:1.6.1
+|         +--- org.jetbrains.compose.animation:animation:1.6.1
+|         |    \--- org.jetbrains.compose.animation:animation-desktop:1.6.1
+|         |         +--- org.jetbrains.compose.animation:animation-core:1.6.1
+|         |         |    \--- org.jetbrains.compose.animation:animation-core-desktop:1.6.1
+|         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1
+|         |         |         |    \--- androidx.annotation:annotation:1.7.1 (*)
+|         |         |         +--- org.jetbrains.compose.collection-internal:collection:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.ui:ui:1.6.1
+|         |         |         |    \--- org.jetbrains.compose.ui:ui-desktop:1.6.1
+|         |         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.compose.collection-internal:collection:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.compose.runtime:runtime-saveable:1.6.1
+|         |         |         |         |    \--- org.jetbrains.compose.runtime:runtime-saveable-desktop:1.6.1
+|         |         |         |         |         \--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.compose.ui:ui-geometry:1.6.1
+|         |         |         |         |    \--- org.jetbrains.compose.ui:ui-geometry-desktop:1.6.1
+|         |         |         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1
+|         |         |         |         |         |    \--- org.jetbrains.compose.ui:ui-util-desktop:1.6.1
+|         |         |         |         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.compose.ui:ui-graphics:1.6.1
+|         |         |         |         |    \--- org.jetbrains.compose.ui:ui-graphics-desktop:1.6.1
+|         |         |         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.collection-internal:collection:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-geometry:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-unit:1.6.1
+|         |         |         |         |         |    \--- org.jetbrains.compose.ui:ui-unit-desktop:1.6.1
+|         |         |         |         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         |         |         |         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         |         |         +--- org.jetbrains.compose.ui:ui-geometry:1.6.1 (*)
+|         |         |         |         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         |         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.23
+|         |         |         |         |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.23
+|         |         |         |         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         \--- org.jetbrains.skiko:skiko:0.7.97
+|         |         |         |         |              \--- org.jetbrains.skiko:skiko-awt:0.7.97
+|         |         |         |         |                   +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         |         |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0 (*)
+|         |         |         |         |                   \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         |         |         +--- org.jetbrains.compose.ui:ui-text:1.6.1
+|         |         |         |         |    \--- org.jetbrains.compose.ui:ui-text-desktop:1.6.1
+|         |         |         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.runtime:runtime-saveable:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-geometry:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-graphics:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-unit:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         |         +--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
+|         |         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         |         |         |         \--- org.jetbrains.skiko:skiko:0.7.97 (*)
+|         |         |         |         +--- org.jetbrains.compose.ui:ui-unit:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         |         |         \--- org.jetbrains.skiko:skiko:0.7.97 (*)
+|         |         |         +--- org.jetbrains.compose.ui:ui-unit:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         |         +--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
+|         |         |         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         +--- org.jetbrains.compose.foundation:foundation-layout:1.6.1
+|         |         |    \--- org.jetbrains.compose.foundation:foundation-layout-desktop:1.6.1
+|         |         |         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+|         |         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.ui:ui-geometry:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         +--- org.jetbrains.compose.collection-internal:collection:1.6.1 (*)
+|         +--- org.jetbrains.compose.foundation:foundation-layout:1.6.1 (*)
+|         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui-text:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         +--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
+|         \--- org.jetbrains.skiko:skiko:0.7.97 (*)
++--- org.jetbrains.compose.material:material:1.6.1
+|    \--- org.jetbrains.compose.material:material-desktop:1.6.1
+|         +--- org.jetbrains.compose.animation:animation:1.6.1 (*)
+|         +--- org.jetbrains.compose.animation:animation-core:1.6.1 (*)
+|         +--- org.jetbrains.compose.annotation-internal:annotation:1.6.1 (*)
+|         +--- org.jetbrains.compose.foundation:foundation:1.6.1 (*)
+|         +--- org.jetbrains.compose.foundation:foundation-layout:1.6.1 (*)
+|         +--- org.jetbrains.compose.material:material-icons-core:1.6.1
+|         |    \--- org.jetbrains.compose.material:material-icons-core-desktop:1.6.1
+|         |         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.ui:ui-graphics:1.6.1 (*)
+|         |         \--- org.jetbrains.compose.ui:ui-unit:1.6.1 (*)
+|         +--- org.jetbrains.compose.material:material-ripple:1.6.1
+|         |    \--- org.jetbrains.compose.material:material-ripple-desktop:1.6.1
+|         |         +--- org.jetbrains.compose.animation:animation:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.foundation:foundation:1.6.1 (*)
+|         |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         |         \--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui-text:1.6.1 (*)
+|         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+|         \--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
++--- org.jetbrains.compose.ui:ui:1.6.1 (*)
++--- org.jetbrains.compose.components:components-resources:1.6.1
+|    \--- org.jetbrains.compose.components:components-resources-desktop:1.6.1
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+|         +--- org.jetbrains.compose.foundation:foundation:1.6.1 (*)
+|         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
++--- org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3
+|    \--- org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-serialization-bom:1.6.3
+|         |    +--- org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3 (c)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.3 (c)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3 (c)
+|         |    \--- org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.3 (c)
+|         \--- org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3
+|              \--- org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.3
+|                   +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|                   \--- org.jetbrains.kotlinx:kotlinx-serialization-bom:1.6.3 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
++--- org.jetbrains.kotlinx:kotlinx-datetime:0.5.0
+|    \--- org.jetbrains.kotlinx:kotlinx-datetime-jvm:0.5.0
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
++--- media.kamel:kamel-image:0.9.3
+|    \--- media.kamel:kamel-image-desktop:0.9.3
+|         +--- media.kamel:kamel-core:0.9.3
+|         |    \--- media.kamel:kamel-core-desktop:0.9.3
+|         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         |         +--- org.jetbrains.compose.ui:ui:1.5.12 -> 1.6.1 (*)
+|         |         +--- org.jetbrains.compose.foundation:foundation:1.5.12 -> 1.6.1 (*)
+|         |         +--- org.jetbrains.compose.runtime:runtime:1.5.12 -> 1.6.1 (*)
+|         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         +--- io.ktor:ktor-client-core:2.3.8
+|         |         |    \--- io.ktor:ktor-client-core-jvm:2.3.8
+|         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0
+|         |         |         |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         |         |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.8.0 (*)
+|         |         |         +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         +--- io.ktor:ktor-http:2.3.8
+|         |         |         |    \--- io.ktor:ktor-http-jvm:2.3.8
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |         +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |         \--- io.ktor:ktor-utils:2.3.8
+|         |         |         |              \--- io.ktor:ktor-utils-jvm:2.3.8
+|         |         |         |                   +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |                   +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |                   +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |                   \--- io.ktor:ktor-io:2.3.8
+|         |         |         |                        \--- io.ktor:ktor-io-jvm:2.3.8
+|         |         |         |                             +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |                             +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |                             +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |                             +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |                             \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         +--- io.ktor:ktor-events:2.3.8
+|         |         |         |    \--- io.ktor:ktor-events-jvm:2.3.8
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |         +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |         +--- io.ktor:ktor-http:2.3.8 (*)
+|         |         |         |         \--- io.ktor:ktor-utils:2.3.8 (*)
+|         |         |         +--- io.ktor:ktor-websocket-serialization:2.3.8
+|         |         |         |    \--- io.ktor:ktor-websocket-serialization-jvm:2.3.8
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |         +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |         +--- io.ktor:ktor-http:2.3.8 (*)
+|         |         |         |         \--- io.ktor:ktor-serialization:2.3.8
+|         |         |         |              \--- io.ktor:ktor-serialization-jvm:2.3.8
+|         |         |         |                   +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |                   +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |                   +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |                   +--- io.ktor:ktor-http:2.3.8 (*)
+|         |         |         |                   \--- io.ktor:ktor-websockets:2.3.8
+|         |         |         |                        \--- io.ktor:ktor-websockets-jvm:2.3.8
+|         |         |         |                             +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         |         |                             +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         |         |                             +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         |         |                             +--- org.slf4j:slf4j-api:1.7.36
+|         |         |         |                             +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         |         |                             \--- io.ktor:ktor-http:2.3.8 (*)
+|         |         |         \--- org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.7.1 -> 1.8.0
+|         |         |              +--- org.slf4j:slf4j-api:1.7.32 -> 1.7.36
+|         |         |              +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |         |              +--- org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.8.0 (*)
+|         |         |              \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         |         +--- com.squareup.okio:okio:3.8.0
+|         |         |    \--- com.squareup.okio:okio-jvm:3.8.0
+|         |         |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         |         \--- io.github.reactivecircus.cache4k:cache4k:0.13.0
+|         |              \--- io.github.reactivecircus.cache4k:cache4k-jvm:0.13.0
+|         |                   +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         |                   +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |                   +--- co.touchlab:stately-iso-collections:2.0.6
+|         |                   |    \--- co.touchlab:stately-iso-collections-jvm:2.0.6
+|         |                   |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 -> 1.9.23 (*)
+|         |                   |         \--- co.touchlab:stately-isolate:2.0.6
+|         |                   |              \--- co.touchlab:stately-isolate-jvm:2.0.6
+|         |                   |                   +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 -> 1.9.23 (*)
+|         |                   |                   +--- co.touchlab:stately-common:2.0.6
+|         |                   |                   |    \--- co.touchlab:stately-common-jvm:2.0.6
+|         |                   |                   |         \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 -> 1.9.23 (*)
+|         |                   |                   \--- co.touchlab:stately-concurrency:2.0.6
+|         |                   |                        \--- co.touchlab:stately-concurrency-jvm:2.0.6
+|         |                   |                             +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 -> 1.9.23 (*)
+|         |                   |                             \--- co.touchlab:stately-strict:2.0.6
+|         |                   |                                  \--- co.touchlab:stately-strict-jvm:2.0.6
+|         |                   |                                       \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 -> 1.9.23 (*)
+|         |                   \--- org.jetbrains.kotlinx:atomicfu:0.23.2 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         +--- org.apache.xmlgraphics:batik-transcoder:1.17
+|         |    +--- org.apache.xmlgraphics:batik-anim:1.17
+|         |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-util:1.17
+|         |    |    |    |    +--- org.apache.xmlgraphics:batik-constants:1.17
+|         |    |    |    |    |    \--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    |    +--- org.apache.xmlgraphics:batik-i18n:1.17
+|         |    |    |    |    |    \--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    |    \--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    \--- org.apache.xmlgraphics:xmlgraphics-commons:2.9
+|         |    |    |         +--- commons-io:commons-io:2.11.0
+|         |    |    |         \--- commons-logging:commons-logging:1.0.4
+|         |    |    +--- org.apache.xmlgraphics:batik-css:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:xmlgraphics-commons:2.9 (*)
+|         |    |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    |    +--- org.apache.xmlgraphics:batik-dom:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-css:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-ext:1.17
+|         |    |    |    |    \--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-xml:1.17
+|         |    |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    |    \--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    |    +--- xml-apis:xml-apis:1.4.01
+|         |    |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    |    +--- org.apache.xmlgraphics:batik-ext:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-parser:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-xml:1.17 (*)
+|         |    |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    +--- org.apache.xmlgraphics:batik-svg-dom:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-css:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-dom:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-ext:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-parser:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-bridge:1.17
+|         |    |    +--- org.apache.xmlgraphics:batik-anim:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-css:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-dom:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-gvt:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    \--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-parser:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-script:1.17
+|         |    |    |    +--- org.apache.xmlgraphics:batik-anim:1.17 (*)
+|         |    |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    |    \--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    +--- org.apache.xmlgraphics:batik-svg-dom:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-xml:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:xmlgraphics-commons:2.9 (*)
+|         |    |    \--- xml-apis:xml-apis-ext:1.3.04
+|         |    +--- org.apache.xmlgraphics:batik-dom:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-gvt:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    +--- org.apache.xmlgraphics:batik-svggen:1.17
+|         |    |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    |    \--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-xml:1.17 (*)
+|         |    \--- xml-apis:xml-apis-ext:1.3.04
+|         +--- org.apache.xmlgraphics:batik-codec:1.17
+|         |    +--- org.apache.xmlgraphics:batik-awt-util:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-bridge:1.17 (*)
+|         |    +--- org.apache.xmlgraphics:batik-shared-resources:1.17
+|         |    +--- org.apache.xmlgraphics:batik-transcoder:1.17 (*)
+|         |    \--- org.apache.xmlgraphics:batik-util:1.17 (*)
+|         +--- org.jetbrains.compose.ui:ui:1.5.12 -> 1.6.1 (*)
+|         +--- org.jetbrains.compose.foundation:foundation:1.5.12 -> 1.6.1 (*)
+|         +--- org.jetbrains.compose.runtime:runtime:1.5.12 -> 1.6.1 (*)
+|         \--- io.ktor:ktor-client-core:2.3.8 (*)
++--- io.ktor:ktor-client-core:2.3.8 (*)
++--- io.ktor:ktor-client-content-negotiation:2.3.8
+|    \--- io.ktor:ktor-client-content-negotiation-jvm:2.3.8
+|         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         +--- org.slf4j:slf4j-api:1.7.36
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         +--- io.ktor:ktor-client-core:2.3.8 (*)
+|         \--- io.ktor:ktor-serialization:2.3.8 (*)
++--- io.ktor:ktor-serialization-kotlinx-json:2.3.8
+|    \--- io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.8
+|         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         +--- org.slf4j:slf4j-api:1.7.36
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         +--- io.ktor:ktor-http:2.3.8 (*)
+|         +--- io.ktor:ktor-serialization-kotlinx:2.3.8
+|         |    \--- io.ktor:ktor-serialization-kotlinx-jvm:2.3.8
+|         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 -> 1.9.23 (*)
+|         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 -> 1.9.23 (*)
+|         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.1 -> 1.8.0 (*)
+|         |         +--- org.slf4j:slf4j-api:1.7.36
+|         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1 -> 1.8.0 (*)
+|         |         +--- io.ktor:ktor-http:2.3.8 (*)
+|         |         +--- io.ktor:ktor-serialization:2.3.8 (*)
+|         |         \--- org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.1 -> 1.6.3 (*)
+|         \--- org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1 -> 1.6.3 (*)
++--- dev.gitlive:firebase-auth:1.12.0
+|    \--- dev.gitlive:firebase-auth-jvm:1.12.0
+|         +--- dev.gitlive:firebase-java-sdk:0.4.0
+|         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 -> 1.9.23 (*)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.0 -> 1.6.3 (*)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0 -> 1.6.3 (*)
+|         |    +--- org.xerial:sqlite-jdbc:3.44.1.0
+|         |    |    \--- org.slf4j:slf4j-api:1.7.36
+|         |    +--- javax.inject:javax.inject:1
+|         |    +--- com.squareup.okhttp3:okhttp:3.12.13
+|         |    |    \--- com.squareup.okio:okio:1.15.0 -> 3.8.0 (*)
+|         |    +--- io.grpc:grpc-protobuf-lite:1.52.1
+|         |    |    +--- io.grpc:grpc-api:1.52.1
+|         |    |    |    +--- io.grpc:grpc-context:1.52.1
+|         |    |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|         |    |    |    +--- com.google.errorprone:error_prone_annotations:2.14.0
+|         |    |    |    \--- com.google.guava:guava:31.1-android
+|         |    |    |         +--- com.google.guava:failureaccess:1.0.1
+|         |    |    |         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         |    |    |         +--- com.google.code.findbugs:jsr305:3.0.2
+|         |    |    |         +--- org.checkerframework:checker-qual:3.12.0
+|         |    |    |         +--- com.google.errorprone:error_prone_annotations:2.11.0 -> 2.14.0
+|         |    |    |         \--- com.google.j2objc:j2objc-annotations:1.3
+|         |    |    +--- com.google.protobuf:protobuf-javalite:3.21.7
+|         |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|         |    |    \--- com.google.guava:guava:31.1-android (*)
+|         |    +--- io.grpc:grpc-stub:1.52.1
+|         |    |    +--- io.grpc:grpc-api:1.52.1 (*)
+|         |    |    +--- com.google.guava:guava:31.1-android (*)
+|         |    |    \--- com.google.errorprone:error_prone_annotations:2.14.0
+|         |    +--- androidx.collection:collection:1.2.0 -> 1.4.0 (*)
+|         |    +--- androidx.lifecycle:lifecycle-common:2.4.0
+|         |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.7.1 (*)
+|         |    \--- io.grpc:grpc-okhttp:1.52.1
+|         |         +--- io.grpc:grpc-core:1.52.1
+|         |         |    +--- io.grpc:grpc-api:1.52.1 (*)
+|         |         |    +--- com.google.code.gson:gson:2.9.0
+|         |         |    +--- org.codehaus.mojo:animal-sniffer-annotations:1.21
+|         |         |    +--- com.google.errorprone:error_prone_annotations:2.14.0
+|         |         |    +--- com.google.guava:guava:31.1-android (*)
+|         |         |    \--- io.perfmark:perfmark-api:0.25.0
+|         |         +--- com.squareup.okio:okio:1.17.5 -> 3.8.0 (*)
+|         |         +--- com.google.guava:guava:31.1-android (*)
+|         |         \--- io.perfmark:perfmark-api:0.25.0
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3 -> 1.8.0
+|         |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+|         |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.8.0 (*)
+|         |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         +--- dev.gitlive:firebase-app:1.12.0
+|         |    \--- dev.gitlive:firebase-app-jvm:1.12.0
+|         |         +--- dev.gitlive:firebase-java-sdk:0.4.0 (*)
+|         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3 -> 1.8.0 (*)
+|         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         |         +--- dev.gitlive:firebase-common:1.12.0
+|         |         |    \--- dev.gitlive:firebase-common-jvm:1.12.0
+|         |         |         +--- dev.gitlive:firebase-java-sdk:0.4.0 (*)
+|         |         |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3 -> 1.8.0 (*)
+|         |         |         +--- org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.0 -> 1.6.3 (*)
+|         |         |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         |         |         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
+|         |         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         +--- dev.gitlive:firebase-common:1.12.0 (*)
+|         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
++--- dev.gitlive:firebase-firestore:1.12.0
+|    \--- dev.gitlive:firebase-firestore-jvm:1.12.0
+|         +--- dev.gitlive:firebase-java-sdk:0.4.0 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3 -> 1.8.0 (*)
+|         +--- dev.gitlive:firebase-app:1.12.0 (*)
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.21 -> 1.9.23 (*)
+|         +--- dev.gitlive:firebase-common:1.12.0 (*)
+|         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3 -> 1.8.0 (*)
++--- dev.gitlive:firebase-common:1.12.0 (*)
+\--- org.jetbrains.compose.desktop:desktop-jvm-macos-arm64:1.6.1
+     +--- org.jetbrains.compose.desktop:desktop:1.6.1
+     |    \--- org.jetbrains.compose.desktop:desktop-jvm:1.6.1
+     |         +--- org.jetbrains.compose.foundation:foundation:1.6.1 (*)
+     |         +--- org.jetbrains.compose.material:material:1.6.1 (*)
+     |         +--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+     |         +--- org.jetbrains.compose.ui:ui:1.6.1 (*)
+     |         +--- org.jetbrains.compose.ui:ui-tooling-preview:1.6.1
+     |         |    \--- org.jetbrains.compose.ui:ui-tooling-preview-desktop:1.6.1
+     |         |         \--- org.jetbrains.compose.runtime:runtime:1.6.1 (*)
+     |         +--- org.jetbrains.compose.ui:ui-util:1.6.1 (*)
+     |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.23 (*)
+     |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.23 (*)
+     |         \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0 (*)
+     \--- org.jetbrains.skiko:skiko-awt-runtime-macos-arm64:0.7.97
+          \--- org.jetbrains.skiko:skiko-awt:0.7.97 (*)
+
+(c) - A dependency constraint, not a dependency. The dependency affected by the constraint occurs elsewhere in the tree.
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+[Incubating] Problems report is available at: file:///Users/lukas/git-projects/gusur/mobile/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 634ms
+1 actionable task: 1 executed

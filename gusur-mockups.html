@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GUSUR — Aufguss Finder & Rater · Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a0d08;
+    --paper: #fdf4e6;
+    --cream: #f5e6cc;
+    --ember: #ff5722;
+    --ember-deep: #d63a00;
+    --gold: #ffb627;
+    --steam: #e8d5b7;
+    --wood: #6b3410;
+    --wood-deep: #3d1d08;
+    --leaf: #2d5016;
+    --leaf-bright: #6fa83a;
+    --sky: #4a90c2;
+    --plum: #7d2c5e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); font-family: 'Bricolage Grotesque', system-ui, sans-serif; }
+  body {
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(255, 87, 34, 0.06), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(255, 182, 39, 0.08), transparent 40%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/></svg>");
+    min-height: 100vh;
+    padding: 40px 24px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    max-width: 1400px;
+    margin: 0 auto 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 32px;
+  }
+  .header-left { display: flex; align-items: center; gap: 20px; }
+  .header-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+  .header-title em { color: var(--ember); font-style: italic; }
+  .header-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: right;
+    line-height: 1.6;
+  }
+  .header-meta .tag {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+
+  /* SECTION LABELS */
+  .section-label {
+    max-width: 1400px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .section-label-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--ember);
+    font-weight: 500;
+  }
+  .section-label-text {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .section-label-line {
+    flex: 1;
+    height: 2px;
+    background: var(--ink);
+    opacity: 0.15;
+  }
+
+  /* GRID OF SCREENS */
+  .screens-grid {
+    max-width: 1400px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px 32px;
+    justify-items: center;
+  }
+
+  /* PHONE FRAME */
+  .phone {
+    width: 320px;
+    height: 680px;
+    background: var(--ink);
+    border-radius: 44px;
+    padding: 12px;
+    box-shadow:
+      0 30px 60px -20px rgba(26, 13, 8, 0.4),
+      0 0 0 2px var(--ink);
+    position: relative;
+  }
+  .phone::before {
+    content: "";
+    position: absolute;
+    top: 22px; left: 50%;
+    transform: translateX(-50%);
+    width: 110px; height: 28px;
+    background: var(--ink);
+    border-radius: 999px;
+    z-index: 10;
+  }
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    background: var(--paper);
+  }
+  .screen-label {
+    margin-top: 16px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.7;
+  }
+  .screen-label strong { color: var(--ember); display: block; font-size: 14px; letter-spacing: 0.1em; margin-bottom: 4px; }
+
+  /* STATUS BAR (inside phone) */
+  .status-bar {
+    height: 44px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 28px 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .status-bar.dark { color: var(--paper); }
+
+  /* ============== SCREEN 1: LOGIN ============== */
+  .login-screen {
+    height: 100%;
+    background: linear-gradient(180deg, #2a0e04 0%, #5d1f08 50%, #ff5722 100%);
+    color: var(--paper);
+    position: relative;
+    overflow: hidden;
+  }
+  .login-bg-art {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .login-content {
+    position: relative;
+    height: calc(100% - 44px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .login-logo-wrap { text-align: center; padding-top: 40px; }
+  .login-logo-wrap .logo-mark {
+    margin-bottom: 16px;
+  }
+  .login-logo-wrap .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 52px;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--paper);
+  }
+  .login-logo-wrap .wordmark .dot { color: var(--gold); }
+  .login-tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-top: 8px;
+  }
+  .login-illustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+  }
+  .login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 8px;
+  }
+  .btn {
+    padding: 14px 20px;
+    border-radius: 16px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-primary { background: var(--paper); color: var(--ink); }
+  .btn-ghost { background: rgba(253, 244, 230, 0.15); color: var(--paper); border: 1.5px solid rgba(253, 244, 230, 0.35); backdrop-filter: blur(8px); }
+  .btn-link { background: transparent; color: var(--paper); font-size: 13px; opacity: 0.85; padding: 8px; }
+
+  /* ============== SCREEN 2: HOME / FEED ============== */
+  .home-screen { height: 100%; background: var(--paper); position: relative; overflow: hidden; }
+  .home-header {
+    padding: 0 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-greeting {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .home-greeting span { color: var(--ember); font-style: italic; }
+  .home-greeting-sub { font-size: 11px; opacity: 0.6; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.15em; margin-top: 2px; }
+  .avatar-sm {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--ember));
+    display: flex; align-items: center; justify-content: center;
+    color: var(--paper);
+    font-weight: 800;
+    font-size: 14px;
+    border: 2px solid var(--ink);
+  }
+  .filter-chips {
+    display: flex; gap: 8px;
+    padding: 0 20px 16px;
+    overflow-x: auto;
+  }
+  .chip {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: transparent;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .chip.active { background: var(--ink); color: var(--paper); }
+  .chip.hot { border-color: var(--ember); color: var(--ember); }
+  .feed-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: calc(100% - 220px);
+    overflow-y: auto;
+  }
+  .show-card {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 20px;
+    padding: 14px;
+    position: relative;
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+  .show-card.featured { background: var(--ink); color: var(--paper); }
+  .show-card.featured .card-meta { color: var(--steam); }
+  .show-card-row { display: flex; gap: 12px; align-items: flex-start; }
+  .card-thumb {
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--ember), var(--gold));
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    border: 2px solid var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .card-thumb.theme-ice { background: linear-gradient(135deg, var(--sky), #b8e0f0); }
+  .card-thumb.theme-forest { background: linear-gradient(135deg, var(--leaf), var(--leaf-bright)); }
+  .card-thumb.theme-night { background: linear-gradient(135deg, var(--plum), #c44569); }
+  .card-content { flex: 1; min-width: 0; }
+  .card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .card-meta {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .card-bottom { display: flex; align-items: center; justify-content: space-between; }
+  .rating-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .live-pill {
+    background: var(--ember);
+    color: var(--paper);
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .live-pill::before {
+    content: "";
+    width: 6px; height: 6px;
+    background: var(--paper);
+    border-radius: 50%;
+    animation: pulse 1.4s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .nav-tabs {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: var(--ink);
+    color: var(--paper);
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 16px 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .nav-tab {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.55;
+  }
+  .nav-tab.active { opacity: 1; color: var(--gold); }
+  .nav-tab svg { display: block; }
+
+  /* ============== SCREEN 3: MAP ============== */
+  .map-screen { height: 100%; background: #f0e4d0; position: relative; overflow: hidden; }
+  .map-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 30% 40%, rgba(111, 168, 58, 0.18), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(74, 144, 194, 0.15), transparent 50%);
+  }
+  .map-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(26, 13, 8, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26, 13, 8, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .map-roads {
+    position: absolute; inset: 0;
+    pointer-events: none;
+  }
+  .map-search-bar {
+    position: absolute;
+    top: 56px; left: 16px; right: 16px;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 16px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 3px 3px 0 var(--ink);
+    z-index: 5;
+  }
+  .map-search-bar input {
+    border: none;
+    background: transparent;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 13px;
+    flex: 1;
+    outline: none;
+    color: var(--ink);
+  }
+  .map-pin {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    z-index: 3;
+  }
+  .map-pin .pin-body {
+    background: var(--ember);
+    color: var(--paper);
+    padding: 6px 10px;
+    border-radius: 14px;
+    border: 2px solid var(--ink);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+  .map-pin .pin-body.gold { background: var(--gold); color: var(--ink); }
+  .map-pin .pin-body.leaf { background: var(--leaf-bright); color: var(--ink); }
+  .map-pin .pin-tail {
+    width: 0; height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--ink);
+    margin: -1px auto 0;
+  }
+  .map-card {
+    position: absolute;
+    bottom: 90px; left: 16px; right: 16px;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 20px;
+    padding: 14px;
+    box-shadow: 4px 4px 0 var(--ink);
+    z-index: 4;
+  }
+  .map-card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .map-card-meta {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 4px 0 10px;
+  }
+  .map-card-row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+  .map-card .arrow-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    border: none;
+  }
+
+  /* ============== SCREEN 4: DETAIL ============== */
+  .detail-screen { height: 100%; background: var(--paper); position: relative; overflow: hidden; }
+  .detail-hero {
+    height: 240px;
+    background: linear-gradient(180deg, #d63a00 0%, #ff5722 60%, #ffb627 100%);
+    position: relative;
+    overflow: hidden;
+    color: var(--paper);
+  }
+  .detail-hero-art { position: absolute; inset: 0; pointer-events: none; }
+  .detail-hero-back {
+    position: absolute;
+    top: 56px; left: 16px;
+    width: 38px; height: 38px;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    z-index: 5;
+  }
+  .detail-hero-fav {
+    position: absolute;
+    top: 56px; right: 16px;
+    width: 38px; height: 38px;
+    background: var(--ink);
+    color: var(--gold);
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    z-index: 5;
+  }
+  .detail-hero-content {
+    position: absolute;
+    bottom: 20px; left: 20px; right: 20px;
+    z-index: 4;
+  }
+  .detail-hero-tag {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--gold);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 8px;
+  }
+  .detail-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .detail-body {
+    padding: 20px 20px 90px;
+    height: calc(100% - 240px);
+    overflow-y: auto;
+  }
+  .detail-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .detail-stat {
+    border: 1.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .detail-stat-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+  }
+  .detail-stat-num.ember { color: var(--ember); }
+  .detail-stat-label {
+    font-size: 9px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+  .detail-section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .detail-meta-list {
+    list-style: none;
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .detail-meta-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(26, 13, 8, 0.2);
+    padding: 6px 0;
+  }
+  .detail-meta-list li span:last-child { font-weight: 600; }
+  .review-card {
+    border: 1.5px solid var(--ink);
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .review-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .review-avatar {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--leaf-bright);
+    border: 1.5px solid var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink);
+  }
+  .review-name { font-weight: 700; font-size: 12px; }
+  .review-stars { margin-left: auto; color: var(--ember); font-size: 12px; }
+  .review-body { font-size: 12px; line-height: 1.45; opacity: 0.85; }
+  .detail-cta {
+    position: absolute;
+    bottom: 20px; left: 20px; right: 20px;
+    z-index: 5;
+    background: var(--ember);
+    color: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 18px;
+    padding: 14px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: 4px 4px 0 var(--ink);
+    text-align: center;
+  }
+
+  /* ============== SCREEN 5: SUBMIT ============== */
+  .submit-screen { height: 100%; background: var(--cream); position: relative; overflow: hidden; }
+  .submit-header {
+    padding: 0 20px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .submit-back {
+    width: 36px; height: 36px;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+  }
+  .submit-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .submit-skip { font-size: 12px; font-weight: 600; color: var(--ember); }
+  .submit-body {
+    padding: 0 20px 90px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+  }
+  .submit-question {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .submit-question span { color: var(--ember); }
+  .submit-sub {
+    font-size: 12px;
+    opacity: 0.65;
+    margin-bottom: 22px;
+    line-height: 1.4;
+  }
+  .rating-row {
+    display: flex; gap: 6px;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  .heat-orb {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+  }
+  .heat-orb.filled { background: linear-gradient(135deg, var(--ember), var(--gold)); color: var(--paper); }
+  .heat-orb.filled.peak { background: var(--ember-deep); color: var(--paper); transform: scale(1.1); box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--ink); }
+  .submit-block {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 18px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  .submit-block-label {
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
+  .submit-block-content {
+    font-size: 13px;
+    color: rgba(26, 13, 8, 0.5);
+    font-style: italic;
+  }
+  .vibe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .vibe-tag {
+    border: 1.5px solid var(--ink);
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .vibe-tag.selected { background: var(--ink); color: var(--paper); }
+  .vibe-tag.selected.gold { background: var(--gold); color: var(--ink); }
+  .submit-cta {
+    position: absolute;
+    bottom: 20px; left: 20px; right: 20px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 18px;
+    padding: 14px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--ember);
+  }
+
+  /* ============== SCREEN 6: PROFILE ============== */
+  .profile-screen { height: 100%; background: var(--paper); position: relative; overflow: hidden; }
+  .profile-cover {
+    height: 140px;
+    background: linear-gradient(135deg, var(--leaf), var(--leaf-bright));
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-cover-art { position: absolute; inset: 0; }
+  .profile-settings {
+    position: absolute;
+    top: 56px; right: 16px;
+    width: 38px; height: 38px;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    z-index: 5;
+  }
+  .profile-avatar-lg {
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84px; height: 84px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--ember));
+    border: 3px solid var(--paper);
+    box-shadow: 0 0 0 2px var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--paper);
+  }
+  .profile-info {
+    padding: 48px 20px 16px;
+    text-align: center;
+  }
+  .profile-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+  .profile-handle {
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.65;
+    margin-top: 2px;
+  }
+  .profile-badges {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .profile-badge {
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .profile-badge.gold { background: var(--gold); color: var(--ink); }
+  .profile-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+    margin: 16px 20px;
+  }
+  .profile-stat {
+    padding: 12px 8px;
+    text-align: center;
+    border-right: 1.5px solid var(--ink);
+  }
+  .profile-stat:last-child { border-right: none; }
+  .profile-stat-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+  }
+  .profile-stat-label {
+    font-size: 9px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+  .profile-tabs {
+    display: flex;
+    padding: 0 20px;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .profile-tab {
+    flex: 1;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    opacity: 0.55;
+  }
+  .profile-tab.active { opacity: 1; border-color: var(--ember); color: var(--ember); }
+  .profile-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .profile-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 10px;
+  }
+  .profile-item-thumb {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--plum), var(--ember));
+    border: 1.5px solid var(--ink);
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .profile-item-thumb.ice { background: linear-gradient(135deg, var(--sky), #b8e0f0); }
+  .profile-item-content { flex: 1; min-width: 0; }
+  .profile-item-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .profile-item-meta {
+    font-size: 10px;
+    opacity: 0.65;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+  .profile-item-rate {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ember);
+  }
+
+  /* LOGO SHOWCASE */
+  .logo-showcase {
+    max-width: 1400px;
+    margin: 0 auto 80px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 32px;
+    padding: 56px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-showcase::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.25), transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(255, 182, 39, 0.15), transparent 50%);
+    pointer-events: none;
+  }
+  .logo-cell {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 24px 16px;
+    border-right: 1px dashed rgba(253, 244, 230, 0.2);
+  }
+  .logo-cell:last-child { border-right: none; }
+  .logo-cell-label {
+    margin-top: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+  .logo-cell .wordmark-big {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+  .logo-cell .wordmark-big .dot { color: var(--gold); }
+  .logo-cell-light { background: var(--paper); color: var(--ink); border-radius: 20px; padding: 32px 16px 20px; border: 1px solid transparent; }
+
+  /* COLOR / TYPE SHOWCASE */
+  .system-grid {
+    max-width: 1400px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 800px) { .system-grid { grid-template-columns: 1fr; } }
+  .palette {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 20px;
+    padding: 24px;
+  }
+  .palette-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+  }
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+  }
+  .swatch {
+    border-radius: 14px;
+    border: 1.5px solid var(--ink);
+    overflow: hidden;
+  }
+  .swatch-color { height: 70px; }
+  .swatch-info {
+    padding: 8px 10px;
+    background: var(--paper);
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .swatch-info strong { display: block; font-size: 11px; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .swatch-info span { opacity: 0.65; }
+
+  .typo-card {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 20px;
+    padding: 24px;
+  }
+  .typo-card .palette-title { color: var(--paper); }
+  .typo-sample {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed rgba(253, 244, 230, 0.2);
+  }
+  .typo-sample:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+  .typo-sample .name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 6px;
+  }
+  .typo-sample .display {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .typo-sample .body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .typo-sample .mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  .footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-top: 1.5px solid var(--ink);
+    padding-top: 24px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <!-- Compact logo mark -->
+    <svg width="80" height="80" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="logoGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#d63a00"/>
+          <stop offset="60%" stop-color="#ff5722"/>
+          <stop offset="100%" stop-color="#ffb627"/>
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill="#1a0d08"/>
+      <!-- Steam waves -->
+      <path d="M 25 28 Q 35 18, 45 28 T 65 28 T 75 28" stroke="#fdf4e6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M 28 38 Q 38 28, 48 38 T 68 38 T 76 38" stroke="#fdf4e6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <!-- Flame/water drop -->
+      <path d="M 50 50 C 35 60, 35 78, 50 84 C 65 78, 65 60, 50 50 Z" fill="url(#logoGrad)" stroke="#fdf4e6" stroke-width="1.5"/>
+      <circle cx="50" cy="73" r="3" fill="#fdf4e6" opacity="0.5"/>
+    </svg>
+    <div>
+      <div class="header-title">GUSUR<em>.</em></div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 6px; opacity: 0.65;">Find · Rate · Sweat · Repeat</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <div><span class="tag">Mockup v1</span></div>
+    <div>Aufguss Show Finder & Rater</div>
+    <div>5 screens · Logo · System</div>
+  </div>
+</header>
+
+<!-- LOGO SHOWCASE -->
+<div class="section-label">
+  <span class="section-label-num">01 ·</span>
+  <span class="section-label-text">Logo & Wordmark</span>
+  <span class="section-label-line"></span>
+</div>
+<section class="logo-showcase">
+  <div class="logo-cell">
+    <!-- Primary logo on dark -->
+    <svg width="160" height="160" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="logoGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#d63a00"/>
+          <stop offset="60%" stop-color="#ff5722"/>
+          <stop offset="100%" stop-color="#ffb627"/>
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill="#fdf4e6"/>
+      <path d="M 25 28 Q 35 18, 45 28 T 65 28 T 75 28" stroke="#1a0d08" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+      <path d="M 28 38 Q 38 28, 48 38 T 68 38 T 76 38" stroke="#1a0d08" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+      <path d="M 50 50 C 35 60, 35 78, 50 84 C 65 78, 65 60, 50 50 Z" fill="url(#logoGrad2)" stroke="#1a0d08" stroke-width="1.5"/>
+      <circle cx="50" cy="73" r="3" fill="#fdf4e6" opacity="0.7"/>
+    </svg>
+    <div class="logo-cell-label">Primary mark</div>
+  </div>
+  <div class="logo-cell">
+    <div class="wordmark-big">Gusur<span class="dot">.</span></div>
+    <div class="logo-cell-label">Wordmark · Fraunces Italic</div>
+  </div>
+  <div class="logo-cell logo-cell-light">
+    <svg width="120" height="120" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="logoGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#d63a00"/>
+          <stop offset="60%" stop-color="#ff5722"/>
+          <stop offset="100%" stop-color="#ffb627"/>
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill="#1a0d08"/>
+      <path d="M 25 28 Q 35 18, 45 28 T 65 28 T 75 28" stroke="#fdf4e6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M 28 38 Q 38 28, 48 38 T 68 38 T 76 38" stroke="#fdf4e6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <path d="M 50 50 C 35 60, 35 78, 50 84 C 65 78, 65 60, 50 50 Z" fill="url(#logoGrad3)" stroke="#fdf4e6" stroke-width="1.5"/>
+      <circle cx="50" cy="73" r="3" fill="#fdf4e6" opacity="0.5"/>
+    </svg>
+    <div class="logo-cell-label" style="color: var(--ink); opacity: 0.6;">App icon · light bg</div>
+  </div>
+</section>
+
+<!-- SCREENS -->
+<div class="section-label">
+  <span class="section-label-num">02 ·</span>
+  <span class="section-label-text">Screens</span>
+  <span class="section-label-line"></span>
+</div>
+
+<div class="screens-grid">
+
+  <!-- ==================== LOGIN ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="login-screen">
+          <div class="login-bg-art">
+            <svg width="100%" height="100%" viewBox="0 0 320 680" preserveAspectRatio="none" style="position:absolute;inset:0;">
+              <!-- Stars / embers -->
+              <circle cx="40" cy="80" r="1.5" fill="#fdf4e6" opacity="0.7"/>
+              <circle cx="280" cy="100" r="1" fill="#fdf4e6" opacity="0.6"/>
+              <circle cx="200" cy="50" r="1.5" fill="#ffb627" opacity="0.8"/>
+              <circle cx="60" cy="160" r="1" fill="#fdf4e6" opacity="0.5"/>
+              <circle cx="260" cy="200" r="1.2" fill="#ffb627" opacity="0.7"/>
+              <circle cx="100" cy="60" r="1" fill="#fdf4e6" opacity="0.5"/>
+              <!-- Steam swirls top -->
+              <path d="M -20 200 Q 60 180, 120 210 T 240 210 T 360 210" stroke="#fdf4e6" stroke-width="1" fill="none" opacity="0.18"/>
+              <path d="M -20 240 Q 80 220, 160 250 T 360 250" stroke="#fdf4e6" stroke-width="1" fill="none" opacity="0.13"/>
+            </svg>
+          </div>
+          <div class="status-bar dark">
+            <span>9:41</span>
+            <span>● ▌▌▌</span>
+          </div>
+          <div class="login-content">
+            <div class="login-logo-wrap">
+              <!-- Logo mark -->
+              <svg class="logo-mark" width="92" height="92" viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient id="loginLogoGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#d63a00"/>
+                    <stop offset="60%" stop-color="#ff5722"/>
+                    <stop offset="100%" stop-color="#ffb627"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="48" fill="#fdf4e6"/>
+                <path d="M 25 28 Q 35 18, 45 28 T 65 28 T 75 28" stroke="#1a0d08" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+                <path d="M 28 38 Q 38 28, 48 38 T 68 38 T 76 38" stroke="#1a0d08" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+                <path d="M 50 50 C 35 60, 35 78, 50 84 C 65 78, 65 60, 50 50 Z" fill="url(#loginLogoGrad)" stroke="#1a0d08" stroke-width="1.5"/>
+                <circle cx="50" cy="73" r="3" fill="#fdf4e6" opacity="0.7"/>
+              </svg>
+              <div class="wordmark">Gusur<span class="dot">.</span></div>
+              <div class="login-tagline">Find the heat · Rate the show</div>
+            </div>
+
+            <!-- LOGIN ILLUSTRATION -->
+            <div class="login-illustration">
+              <svg width="240" height="220" viewBox="0 0 240 220">
+                <defs>
+                  <linearGradient id="stoveGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#3d1d08"/>
+                    <stop offset="100%" stop-color="#6b3410"/>
+                  </linearGradient>
+                  <linearGradient id="emberGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#d63a00"/>
+                    <stop offset="50%" stop-color="#ff5722"/>
+                    <stop offset="100%" stop-color="#ffb627"/>
+                  </linearGradient>
+                  <radialGradient id="glowGrad" cx="50%" cy="50%">
+                    <stop offset="0%" stop-color="#ffb627" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#ffb627" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- Glow halo -->
+                <ellipse cx="120" cy="150" rx="100" ry="50" fill="url(#glowGrad)"/>
+                <!-- Big steam billows behind -->
+                <g opacity="0.4">
+                  <ellipse cx="80" cy="60" rx="32" ry="22" fill="#fdf4e6"/>
+                  <ellipse cx="130" cy="40" rx="40" ry="26" fill="#fdf4e6"/>
+                  <ellipse cx="180" cy="65" rx="34" ry="22" fill="#fdf4e6"/>
+                  <ellipse cx="100" cy="85" rx="30" ry="18" fill="#fdf4e6"/>
+                  <ellipse cx="160" cy="90" rx="32" ry="20" fill="#fdf4e6"/>
+                </g>
+                <!-- Wooden stove body -->
+                <rect x="60" y="130" width="120" height="70" rx="8" fill="url(#stoveGrad)" stroke="#1a0d08" stroke-width="2"/>
+                <!-- Stove top opening -->
+                <ellipse cx="120" cy="130" rx="60" ry="10" fill="#1a0d08"/>
+                <!-- Hot stones inside -->
+                <g>
+                  <circle cx="95" cy="128" r="9" fill="url(#emberGrad)" stroke="#1a0d08" stroke-width="1.5"/>
+                  <circle cx="115" cy="124" r="11" fill="url(#emberGrad)" stroke="#1a0d08" stroke-width="1.5"/>
+                  <circle cx="138" cy="128" r="10" fill="url(#emberGrad)" stroke="#1a0d08" stroke-width="1.5"/>
+                  <circle cx="155" cy="125" r="8" fill="url(#emberGrad)" stroke="#1a0d08" stroke-width="1.5"/>
+                  <circle cx="105" cy="120" r="6" fill="#ffb627" opacity="0.8"/>
+                  <circle cx="128" cy="118" r="5" fill="#ffe082" opacity="0.9"/>
+                  <circle cx="145" cy="120" r="6" fill="#ffb627" opacity="0.8"/>
+                </g>
+                <!-- Steam rising from stones -->
+                <g stroke="#fdf4e6" stroke-width="2" fill="none" stroke-linecap="round">
+                  <path d="M 100 110 Q 95 95, 102 80 Q 109 65, 100 50" opacity="0.7"/>
+                  <path d="M 120 108 Q 128 90, 122 70 Q 116 55, 125 40" opacity="0.85"/>
+                  <path d="M 140 110 Q 135 95, 142 78 Q 149 60, 140 45" opacity="0.7"/>
+                  <path d="M 155 112 Q 162 95, 156 78 Q 152 65, 158 50" opacity="0.6"/>
+                </g>
+                <!-- Stove door / front detail -->
+                <rect x="100" y="160" width="40" height="32" rx="4" fill="#1a0d08" stroke="#3d1d08" stroke-width="1"/>
+                <circle cx="120" cy="176" r="2" fill="#ffb627"/>
+                <!-- Wood texture lines -->
+                <line x1="65" y1="148" x2="75" y2="148" stroke="#1a0d08" stroke-width="1" opacity="0.3"/>
+                <line x1="165" y1="155" x2="175" y2="155" stroke="#1a0d08" stroke-width="1" opacity="0.3"/>
+                <line x1="65" y1="180" x2="78" y2="180" stroke="#1a0d08" stroke-width="1" opacity="0.3"/>
+                <line x1="160" y1="180" x2="175" y2="180" stroke="#1a0d08" stroke-width="1" opacity="0.3"/>
+                <!-- Towel hanging on side -->
+                <rect x="180" y="155" width="14" height="40" rx="2" fill="#fdf4e6" stroke="#1a0d08" stroke-width="1.5"/>
+                <line x1="183" y1="165" x2="191" y2="165" stroke="#ff5722" stroke-width="2"/>
+                <line x1="183" y1="172" x2="191" y2="172" stroke="#ff5722" stroke-width="2"/>
+                <!-- Birch whisk on other side -->
+                <line x1="48" y1="200" x2="55" y2="160" stroke="#6b3410" stroke-width="3" stroke-linecap="round"/>
+                <g stroke="#6fa83a" stroke-width="1.5" stroke-linecap="round" fill="none">
+                  <path d="M 55 160 Q 48 155, 42 150"/>
+                  <path d="M 55 160 Q 50 152, 47 145"/>
+                  <path d="M 55 160 Q 56 152, 58 145"/>
+                  <path d="M 55 160 Q 62 154, 67 148"/>
+                  <path d="M 55 160 Q 64 156, 70 152"/>
+                </g>
+                <!-- Small leaves -->
+                <ellipse cx="42" cy="148" rx="3" ry="2" fill="#6fa83a" stroke="#1a0d08" stroke-width="0.5"/>
+                <ellipse cx="68" cy="146" rx="3" ry="2" fill="#6fa83a" stroke="#1a0d08" stroke-width="0.5"/>
+              </svg>
+            </div>
+
+            <div class="login-buttons">
+              <button class="btn btn-primary">Continue with Email</button>
+              <button class="btn btn-ghost">⌘ Continue with Apple</button>
+              <button class="btn btn-ghost">G  Continue with Google</button>
+              <button class="btn btn-link">I already have an account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Login</strong>Welcome / Auth</div>
+  </div>
+
+  <!-- ==================== HOME / FEED ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="home-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <span>● ▌▌▌</span>
+          </div>
+          <div class="home-header">
+            <div>
+              <div class="home-greeting">Hey, <span>Mira</span></div>
+              <div class="home-greeting-sub">3 shows tonight near you</div>
+            </div>
+            <div class="avatar-sm">M</div>
+          </div>
+          <div class="filter-chips">
+            <span class="chip active">All shows</span>
+            <span class="chip hot">🔥 Live now</span>
+            <span class="chip">Tonight</span>
+            <span class="chip">Top rated</span>
+          </div>
+          <div class="feed-list">
+            <!-- Featured live card -->
+            <div class="show-card featured">
+              <div class="show-card-row">
+                <div class="card-thumb theme-night">🌙</div>
+                <div class="card-content">
+                  <div class="card-title">Midnight Mango Storm</div>
+                  <div class="card-meta">Sauna Park · Anya R.</div>
+                  <div class="card-bottom">
+                    <span class="live-pill">Live · 12 min</span>
+                    <span class="rating-pill">★ 4.9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-card">
+              <div class="show-card-row">
+                <div class="card-thumb theme-ice">❄</div>
+                <div class="card-content">
+                  <div class="card-title">Arctic Eucalyptus</div>
+                  <div class="card-meta">Therme West · 21:30</div>
+                  <div class="card-bottom">
+                    <span style="font-size: 11px; opacity: 0.65; font-family: 'JetBrains Mono', monospace;">ICE · MENTHOL</span>
+                    <span class="rating-pill">★ 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-card">
+              <div class="show-card-row">
+                <div class="card-thumb theme-forest">🌲</div>
+                <div class="card-content">
+                  <div class="card-title">Forest Awakening</div>
+                  <div class="card-meta">Pine Spa · 22:00</div>
+                  <div class="card-bottom">
+                    <span style="font-size: 11px; opacity: 0.65; font-family: 'JetBrains Mono', monospace;">CALM · 85°C</span>
+                    <span class="rating-pill">★ 4.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-card">
+              <div class="show-card-row">
+                <div class="card-thumb">🔥</div>
+                <div class="card-content">
+                  <div class="card-title">Inferno Citrus Slam</div>
+                  <div class="card-meta">Heat Lab · 23:15</div>
+                  <div class="card-bottom">
+                    <span style="font-size: 11px; opacity: 0.65; font-family: 'JetBrains Mono', monospace;">PEAK · 95°C</span>
+                    <span class="rating-pill">★ 4.8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-tabs">
+            <div class="nav-tab active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+              Home
+            </div>
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4-4"/></svg>
+              Discover
+            </div>
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v16m-8-8h16"/></svg>
+              Add
+            </div>
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+              Profile
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Home / Feed</strong>Discover shows</div>
+  </div>
+
+  <!-- ==================== MAP ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="map-screen">
+          <div class="map-bg"></div>
+          <div class="map-grid"></div>
+          <svg class="map-roads" viewBox="0 0 320 680" preserveAspectRatio="none">
+            <!-- Roads -->
+            <path d="M 0 200 Q 80 220, 160 210 T 320 220" stroke="#fdf4e6" stroke-width="14" fill="none" opacity="0.6"/>
+            <path d="M 0 200 Q 80 220, 160 210 T 320 220" stroke="#1a0d08" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="6 6"/>
+            <path d="M 80 0 L 100 350 Q 110 450, 90 680" stroke="#fdf4e6" stroke-width="14" fill="none" opacity="0.6"/>
+            <path d="M 80 0 L 100 350 Q 110 450, 90 680" stroke="#1a0d08" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="6 6"/>
+            <path d="M 240 0 Q 250 150, 230 280 L 240 680" stroke="#fdf4e6" stroke-width="10" fill="none" opacity="0.5"/>
+            <path d="M 240 0 Q 250 150, 230 280 L 240 680" stroke="#1a0d08" stroke-width="1" fill="none" opacity="0.25" stroke-dasharray="4 4"/>
+            <!-- Park / forest blob -->
+            <path d="M 30 400 Q 60 380, 90 410 Q 100 460, 60 480 Q 20 460, 30 400 Z" fill="#6fa83a" opacity="0.35" stroke="#2d5016" stroke-width="1.5"/>
+            <!-- Lake blob -->
+            <ellipse cx="220" cy="430" rx="50" ry="32" fill="#4a90c2" opacity="0.4" stroke="#1a0d08" stroke-width="1.5"/>
+          </svg>
+
+          <div class="status-bar">
+            <span>9:41</span>
+            <span>● ▌▌▌</span>
+          </div>
+          <div class="map-search-bar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4-4"/></svg>
+            <input value="Aufguss near Hamburg-Mitte" />
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; opacity: 0.5;">12</span>
+          </div>
+
+          <!-- Pins -->
+          <div class="map-pin" style="top: 250px; left: 130px;">
+            <div class="pin-body gold">★ 4.9 · LIVE</div>
+            <div class="pin-tail"></div>
+          </div>
+          <div class="map-pin" style="top: 340px; left: 220px;">
+            <div class="pin-body">★ 4.7</div>
+            <div class="pin-tail"></div>
+          </div>
+          <div class="map-pin" style="top: 420px; left: 75px;">
+            <div class="pin-body leaf">★ 4.5</div>
+            <div class="pin-tail"></div>
+          </div>
+          <div class="map-pin" style="top: 380px; left: 175px;">
+            <div class="pin-body">★ 4.3</div>
+            <div class="pin-tail"></div>
+          </div>
+
+          <!-- Selected card -->
+          <div class="map-card">
+            <div class="map-card-title">Midnight Mango Storm 🌙</div>
+            <div class="map-card-meta">Sauna Park · 0.4 km · 21:00</div>
+            <div class="map-card-row">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="rating-pill">★ 4.9</span>
+                <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; opacity: 0.65;">128 RATES</span>
+              </div>
+              <button class="arrow-btn">→</button>
+            </div>
+          </div>
+
+          <!-- Bottom nav -->
+          <div class="nav-tabs">
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+              Home
+            </div>
+            <div class="nav-tab active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4-4"/></svg>
+              Discover
+            </div>
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v16m-8-8h16"/></svg>
+              Add
+            </div>
+            <div class="nav-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+              Profile
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Map / Discover</strong>Find nearby shows</div>
+  </div>
+
+  <!-- ==================== DETAIL ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="detail-screen">
+          <div class="detail-hero">
+            <svg class="detail-hero-art" viewBox="0 0 320 240" preserveAspectRatio="none">
+              <!-- Concentric heat rings -->
+              <circle cx="240" cy="100" r="100" fill="none" stroke="#fdf4e6" stroke-width="1" opacity="0.18"/>
+              <circle cx="240" cy="100" r="70" fill="none" stroke="#fdf4e6" stroke-width="1" opacity="0.22"/>
+              <circle cx="240" cy="100" r="44" fill="none" stroke="#fdf4e6" stroke-width="1" opacity="0.28"/>
+              <circle cx="240" cy="100" r="22" fill="#ffb627" opacity="0.35"/>
+              <!-- Steam wisps -->
+              <path d="M -20 170 Q 60 150, 120 175 T 240 175 T 360 175" stroke="#fdf4e6" stroke-width="1.5" fill="none" opacity="0.25"/>
+              <path d="M -20 200 Q 80 185, 160 210 T 360 210" stroke="#fdf4e6" stroke-width="1.5" fill="none" opacity="0.2"/>
+              <!-- Stones -->
+              <ellipse cx="60" cy="195" rx="20" ry="8" fill="#1a0d08" opacity="0.6"/>
+              <ellipse cx="90" cy="200" rx="14" ry="6" fill="#3d1d08" opacity="0.55"/>
+              <!-- Decorative dots -->
+              <circle cx="40" cy="60" r="2" fill="#fdf4e6" opacity="0.6"/>
+              <circle cx="80" cy="40" r="1.5" fill="#fdf4e6" opacity="0.5"/>
+              <circle cx="280" cy="180" r="1.5" fill="#fdf4e6" opacity="0.4"/>
+            </svg>
+            <div class="status-bar dark"><span>9:41</span><span>● ▌▌▌</span></div>
+            <div class="detail-hero-back">‹</div>
+            <div class="detail-hero-fav">♥</div>
+            <div class="detail-hero-content">
+              <span class="detail-hero-tag">🔥 Signature Show</span>
+              <div class="detail-title">Midnight<br/>Mango Storm</div>
+            </div>
+          </div>
+          <div class="detail-body">
+            <div class="detail-stats">
+              <div class="detail-stat">
+                <div class="detail-stat-num ember">4.9</div>
+                <div class="detail-stat-label">Rating</div>
+              </div>
+              <div class="detail-stat">
+                <div class="detail-stat-num">95°</div>
+                <div class="detail-stat-label">Heat</div>
+              </div>
+              <div class="detail-stat">
+                <div class="detail-stat-num">15<span style="font-size: 12px; opacity: 0.6;">m</span></div>
+                <div class="detail-stat-label">Length</div>
+              </div>
+            </div>
+
+            <div class="detail-section-title">Show details</div>
+            <ul class="detail-meta-list">
+              <li><span>Sauna-meister</span><span>Anya Rakos</span></li>
+              <li><span>Venue</span><span>Sauna Park · Hall 3</span></li>
+              <li><span>Tonight</span><span>21:00 · 22:30</span></li>
+              <li><span>Scent</span><span>Mango · Birch · Pine</span></li>
+              <li><span>Style</span><span>High-energy · Music</span></li>
+            </ul>
+
+            <div class="detail-section-title">Recent reviews</div>
+            <div class="review-card">
+              <div class="review-head">
+                <div class="review-avatar">L</div>
+                <div class="review-name">Lukas M.</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-body">"Anya's towel work is on another level. The mango drop at minute 8 had the whole room cheering."</div>
+            </div>
+            <div class="review-card">
+              <div class="review-head">
+                <div class="review-avatar" style="background: var(--gold);">P</div>
+                <div class="review-name">Priya K.</div>
+                <div class="review-stars">★★★★☆</div>
+              </div>
+              <div class="review-body">"Peak heat, gorgeous music selection. Slightly long for first-timers but worth every drop of sweat."</div>
+            </div>
+          </div>
+
+          <div class="detail-cta">Rate this show →</div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Detail</strong>Show info & reviews</div>
+  </div>
+
+  <!-- ==================== SUBMIT REVIEW ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="submit-screen">
+          <div class="status-bar"><span>9:41</span><span>● ▌▌▌</span></div>
+          <div class="submit-header">
+            <div class="submit-back">‹</div>
+            <div class="submit-title">Rate the show</div>
+            <div class="submit-skip">Skip</div>
+          </div>
+          <div class="submit-body">
+            <div class="submit-question">How <span>hot</span> was it?</div>
+            <div class="submit-sub">Slide the heat — from cozy to volcanic. Step 1 of 3.</div>
+
+            <div class="rating-row">
+              <div class="heat-orb filled">1</div>
+              <div class="heat-orb filled">2</div>
+              <div class="heat-orb filled">3</div>
+              <div class="heat-orb filled">4</div>
+              <div class="heat-orb filled peak">5</div>
+              <div class="heat-orb">6</div>
+              <div class="heat-orb">7</div>
+            </div>
+
+            <div class="submit-block">
+              <div class="submit-block-label">Pick a vibe (max 3)</div>
+              <div class="vibe-grid">
+                <div class="vibe-tag selected">🔥 Intense</div>
+                <div class="vibe-tag selected gold">🎶 Musical</div>
+                <div class="vibe-tag">🌿 Calm</div>
+                <div class="vibe-tag selected">💃 Theatrical</div>
+                <div class="vibe-tag">❄ Cooling</div>
+                <div class="vibe-tag">🌸 Floral</div>
+              </div>
+            </div>
+
+            <div class="submit-block">
+              <div class="submit-block-label">A quick note</div>
+              <div class="submit-block-content">"The towel work in the second half was wild. Mango scent kept building..."</div>
+            </div>
+
+            <div class="submit-block">
+              <div class="submit-block-label">Add photo (optional)</div>
+              <div style="display: flex; gap: 8px; align-items: center;">
+                <div style="width: 48px; height: 48px; border: 1.5px dashed var(--ink); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0.5;">＋</div>
+                <span style="font-size: 12px; opacity: 0.6;">JPG, PNG · max 4 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="submit-cta">Submit rating</div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Submit review</strong>Rate a show</div>
+  </div>
+
+  <!-- ==================== PROFILE ==================== -->
+  <div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="profile-screen">
+          <div class="profile-cover">
+            <svg class="profile-cover-art" viewBox="0 0 320 140" preserveAspectRatio="none">
+              <!-- Birch trees silhouette -->
+              <g opacity="0.35">
+                <rect x="40" y="40" width="6" height="100" fill="#fdf4e6"/>
+                <rect x="42" y="55" width="3" height="2" fill="#1a0d08"/>
+                <rect x="42" y="80" width="3" height="2" fill="#1a0d08"/>
+                <rect x="42" y="110" width="3" height="2" fill="#1a0d08"/>
+                <rect x="80" y="20" width="6" height="120" fill="#fdf4e6"/>
+                <rect x="82" y="60" width="3" height="2" fill="#1a0d08"/>
+                <rect x="82" y="95" width="3" height="2" fill="#1a0d08"/>
+                <rect x="240" y="30" width="6" height="110" fill="#fdf4e6"/>
+                <rect x="242" y="70" width="3" height="2" fill="#1a0d08"/>
+                <rect x="242" y="105" width="3" height="2" fill="#1a0d08"/>
+                <rect x="280" y="50" width="6" height="90" fill="#fdf4e6"/>
+                <rect x="282" y="85" width="3" height="2" fill="#1a0d08"/>
+              </g>
+              <!-- Steam at top -->
+              <path d="M -20 30 Q 80 10, 160 35 T 360 35" stroke="#fdf4e6" stroke-width="1.5" fill="none" opacity="0.4"/>
+              <path d="M -20 60 Q 100 40, 180 65 T 360 65" stroke="#fdf4e6" stroke-width="1.5" fill="none" opacity="0.3"/>
+            </svg>
+            <div class="status-bar dark"><span>9:41</span><span>● ▌▌▌</span></div>
+            <div class="profile-settings">⚙</div>
+            <div class="profile-avatar-lg">M</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Mira Volkov</div>
+            <div class="profile-handle">@mira.sweats · Hamburg</div>
+            <div class="profile-badges">
+              <span class="profile-badge gold">🔥 Heat Hunter</span>
+              <span class="profile-badge">Lvl 7</span>
+            </div>
+          </div>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <div class="profile-stat-num">142</div>
+              <div class="profile-stat-label">Shows</div>
+            </div>
+            <div class="profile-stat">
+              <div class="profile-stat-num">89</div>
+              <div class="profile-stat-label">Reviews</div>
+            </div>
+            <div class="profile-stat">
+              <div class="profile-stat-num">2.3k</div>
+              <div class="profile-stat-label">Drops</div>
+            </div>
+          </div>
+          <div class="profile-tabs">
+            <div class="profile-tab active">Recent</div>
+            <div class="profile-tab">Favorites</div>
+            <div class="profile-tab">Saved</div>
+          </div>
+          <div class="profile-list">
+            <div class="profile-item">
+              <div class="profile-item-thumb">🥭</div>
+              <div class="profile-item-content">
+                <div class="profile-item-title">Midnight Mango Storm</div>
+                <div class="profile-item-meta">Sauna Park · 2 days ago</div>
+              </div>
+              <div class="profile-item-rate">5.0</div>
+            </div>
+            <div class="profile-item">
+              <div class="profile-item-thumb ice">❄</div>
+              <div class="profile-item-content">
+                <div class="profile-item-title">Arctic Eucalyptus</div>
+                <div class="profile-item-meta">Therme West · last week</div>
+              </div>
+              <div class="profile-item-rate">4.5</div>
+            </div>
+            <div class="profile-item">
+              <div class="profile-item-thumb" style="background: linear-gradient(135deg, var(--leaf), var(--leaf-bright));">🌲</div>
+              <div class="profile-item-content">
+                <div class="profile-item-title">Forest Awakening</div>
+                <div class="profile-item-meta">Pine Spa · last week</div>
+              </div>
+              <div class="profile-item-rate">4.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-label"><strong>Profile</strong>User · history · stats</div>
+  </div>
+
+</div>
+
+<!-- DESIGN SYSTEM -->
+<div class="section-label">
+  <span class="section-label-num">03 ·</span>
+  <span class="section-label-text">Design System</span>
+  <span class="section-label-line"></span>
+</div>
+
+<section class="system-grid">
+  <div class="palette">
+    <div class="palette-title">Color palette</div>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #1a0d08;"></div><div class="swatch-info"><strong>Ink</strong><span>#1A0D08</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #fdf4e6;"></div><div class="swatch-info"><strong>Paper</strong><span>#FDF4E6</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ff5722;"></div><div class="swatch-info"><strong>Ember</strong><span>#FF5722</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ffb627;"></div><div class="swatch-info"><strong>Gold</strong><span>#FFB627</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #6fa83a;"></div><div class="swatch-info"><strong>Birch</strong><span>#6FA83A</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #4a90c2;"></div><div class="swatch-info"><strong>Steam</strong><span>#4A90C2</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #7d2c5e;"></div><div class="swatch-info"><strong>Plum</strong><span>#7D2C5E</span></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #6b3410;"></div><div class="swatch-info"><strong>Wood</strong><span>#6B3410</span></div></div>
+    </div>
+  </div>
+
+  <div class="typo-card">
+    <div class="palette-title">Typography</div>
+    <div class="typo-sample">
+      <div class="name">Display · Fraunces Italic</div>
+      <div class="display">Find the heat</div>
+    </div>
+    <div class="typo-sample">
+      <div class="name">Body · Bricolage Grotesque</div>
+      <div class="body">Bold, friendly, readable.</div>
+    </div>
+    <div class="typo-sample">
+      <div class="name">Meta · JetBrains Mono</div>
+      <div class="mono">95° · 15M · LIVE</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  Gusur Mockup · Hand to Gemini · Aesthetic: Bold & Playful · Sauna Aufguss · 2026
+</footer>
+
+</body>
+</html>

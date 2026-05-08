@@ -1,0 +1,13 @@
+# Firebase service-account keys — never commit these.
+service-account.json
+*.serviceAccountKey.json
+*-firebase-adminsdk-*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Scraper HTTP cache
+.http_cache/

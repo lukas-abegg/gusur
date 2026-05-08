@@ -1,0 +1,2176 @@
+[
+    {
+        "id": "b42aeac2-bfb6-4187-88a9-6a63c98ba59f",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "dbe3ea84-09f1-46ac-aaed-61963bb601f9",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "7d92f419-c27c-4ffb-a10e-578935b73821",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "03559528-89fe-40ae-8d2b-88471aaef897",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "ddeb2478-e3c4-4e65-8d84-e3a8f78b9b77",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "892cda9c-bb0f-422b-9d46-4c1022229f28",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "16aec418-c3a2-46b5-9d68-aa4a23db3206",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "d880c1d8-62bb-4a2f-88cc-d31a4bae7304",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "96c1db1e-4f52-49a1-899c-86b038921751",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "783c5b5e-f144-4d44-bece-cb65d637eb84",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "8d637566-f1db-4173-8280-5b6a4944ea6d",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "d8606628-f89f-463e-98ff-f813e1afd7a9",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "e261e6a1-7620-4a0e-a3f3-9305fdf59363",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "b6f3444c-7def-40f6-92cf-00871308743d",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "e77e35d2-c456-4e6c-bbc8-11aa8661698b",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "a998cb5f-8fb9-4a31-8c99-9f202b16286f",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "a87f9eb6-2fb7-4ae4-a8a6-7ce098b1fc1b",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "cea23e76-8652-4c48-ab18-ff0c2b8c2865",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "9d9bc3b1-6507-479d-aa2d-f1e27051db80",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "2f113444-8eb0-4147-bead-4a78649eb64b",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "e90b847d-1f40-4c84-b8fb-b910a64cb7cb",
+        "name": "Saunagus - Vesturbæjarlaug",
+        "location": "Vesturbæjarlaug",
+        "latitude": 64.1472,
+        "longitude": -21.9424,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Vesturbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "b3521a22-00b2-4e1b-9c1b-e598528bbded",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "718ef4e5-10ac-4fab-bd53-770fec706caa",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "dcb9bc6a-e348-4dca-93f2-d452cf45d0bd",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "33c0092b-a292-4618-b2d2-2a6ffa274be7",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "fba07adc-ea49-4d58-974e-2d7b179c64a3",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "42d12572-a325-41f8-bc01-599b554a9ce1",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "ebe85ff0-0224-4989-9c08-45826e5ded03",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "ed28ae50-701a-4c0f-ba0c-5fd87ed5cf10",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "b74d00ba-5358-4278-bdaa-1b812b3703b1",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "67b915b1-5cd6-44bc-bc10-5985244b93ca",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "41e17ea7-d9c4-40af-84ed-467a8550ff26",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "8c182f6f-a83e-4433-b9da-f602d57d417e",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "61bb83b4-9b14-477e-a6a0-a08a21453f71",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "5280f0ee-e5f8-4b21-9e46-1c3885bb9b20",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "0de58372-bd6f-4fff-93f6-5ad47703bdf4",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "f99c38d4-200f-40cf-bdd6-b38ec2d92db2",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "7d20bd7b-27a2-467a-bf77-78c2e41d651d",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "f4061175-f315-4ed5-ac81-51807e4a0944",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "dda0c111-087a-4093-9c12-6f6c115319f4",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "6842aebd-f206-4916-9fe7-36776f91f3d1",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "8584fa0f-e64d-4aaa-8efc-99b126a1dcd6",
+        "name": "Saunagus - Sundhöll Reykjavíkur",
+        "location": "Sundhöll Reykjavíkur",
+        "latitude": 64.1418,
+        "longitude": -21.9224,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Sundhöll Reykjavíkur. Arrive 10 min early."
+    },
+    {
+        "id": "9d83a9ae-8066-43c1-831a-bc88a948056c",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "21cb8c84-6a6c-4e98-856f-66dfc23e8f0c",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "28dfbb43-3ba0-4e04-9a75-b7643b72a88d",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "05a14bce-f2a0-4533-8270-7ddd170336e1",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "d1a2abd4-1d4c-4359-b00f-6fa7553458d8",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "98d2df1e-3513-4375-a050-b859c72e5ee0",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "7d046494-3561-4114-96ac-2994240a7549",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "c59d9260-030b-4ad2-b435-9cad6f41471a",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "642a3814-f887-4b5e-9f16-138d8a0edff5",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "48385f97-963a-42ab-aa28-678651100f6a",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "24d93c67-d236-49c9-b430-89fb09330c5a",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "31cb65ae-561b-4195-ad16-9cee54257b86",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "fde8c15b-38a6-4571-b3d8-fb834c3265e3",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "ed42fca3-e2ec-4ab3-9963-58f584a6c4f2",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "2d38c64e-9a79-472e-94f2-5b2e0b179d38",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "bd1cf3ca-a7fa-4f8e-83e0-889c062de195",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "dc3d504b-4da2-49b3-a21f-8b99272d7d2c",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "205b1d2f-9fef-432f-9a6d-852cab83909e",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "afce19a8-1a75-4c04-9dcf-c64f7012c7d7",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "97e2ea3d-dd25-4bbf-b972-efae389e2952",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "f944ccc4-cba6-40dc-8a68-64803ba943f0",
+        "name": "Saunagus - Laugardalslaug",
+        "location": "Laugardalslaug",
+        "latitude": 64.1436,
+        "longitude": -21.87,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Laugardalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "030f96cc-d8d6-4b2b-bd6d-78296705fd95",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "78c00d7d-61bb-45b5-930d-597b2edbc96b",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "9ad30838-ec81-4b14-baa3-a62a9ce5e33a",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "756f60e8-dfbf-4817-96a7-e65efc9f49d6",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "a1680a72-1d35-47a4-ae96-a3de6fca491d",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "4c2ab04c-ac65-4f84-abc4-d752cf49aa47",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "47b1898d-35ea-4972-8a03-8a2b13bb6672",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "94b7bf1d-ba48-4a2a-a275-d2030a094e26",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "dd113601-4ece-4383-a6db-bbc0c0392809",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "7f1d0f57-baab-4c6a-8647-f51255e5f4ba",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "668a865e-4152-4bc7-b820-fef79cc69423",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "c768fe42-9412-4959-9dfa-893c3cc47c25",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "fe1393aa-840a-4c58-8351-e877a876d28e",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "5657ce1c-82a4-4a0e-9964-beceacc9e55b",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "75964223-24d5-4de5-a7c3-3a18b316c5b0",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "56012f9d-f0e0-4e69-ab77-88bdcd7086fb",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "67f3db8d-057b-4e23-a4d7-adac747705a9",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "8a1d9c9c-197b-4452-921a-2b576b7fe0aa",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "7214b6c1-00fa-4e23-8356-5eb8de7a8d86",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "0f5f7dd2-8873-4b29-ad3a-e812ae85ba1d",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "af8db7cb-864a-430b-96af-0fa15aed5507",
+        "name": "Saunagus - Árbæjarlaug",
+        "location": "Árbæjarlaug",
+        "latitude": 64.1214,
+        "longitude": -21.8055,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Árbæjarlaug. Arrive 10 min early."
+    },
+    {
+        "id": "a5242e1c-35b8-40a7-9053-1f711abdb483",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "17466c5a-bc9e-4bb4-a90c-a001fb1fd362",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "e0cde6e2-f9c7-4de7-88bd-ecfa035ff683",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "b8f6ad91-1548-4840-95a4-8b53f4405001",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "f533c50d-e653-4b3d-8d3a-bd03b5a74a95",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "69b643ff-9b0c-4983-b022-99696b538358",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "c000f604-82e9-49a1-a4c3-dbff3f47c169",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "91b7d148-51e5-4736-94aa-a3c5cb8cf8fe",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "1eab0695-a845-4205-b772-970bc962fb4a",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "2b42f6ef-7c49-485f-b3a4-d7b3650f2981",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "0f4d22f5-8b9f-425a-a5c3-b575979a2310",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "8c230c58-ded9-403f-82b9-ba2092d8f0e5",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "099f434c-e013-4ed8-85a9-476d5e312b25",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "db3e8b48-468e-4d02-9d43-af805a9c5aa7",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "e862dae0-50fc-4bc6-96ff-4d8338b16506",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "0fff7896-ba88-4b95-95f9-d1a8bf1f3c8a",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "c6b17fbc-ce45-4311-85f8-26f8f4525100",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "fd1b2c11-8d7f-4118-a407-3e5975a9ae3f",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "e78dac13-b03c-4a65-9873-631f42952f98",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "fa290cfb-d5fe-42d3-9d7e-f21702722279",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "da296359-c4ab-4852-8c04-a76f078df418",
+        "name": "Saunagus - Breiðholtslaug",
+        "location": "Breiðholtslaug",
+        "latitude": 64.1042,
+        "longitude": -21.8514,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Breiðholtslaug. Arrive 10 min early."
+    },
+    {
+        "id": "91bb88eb-79ca-4bbe-b27a-6c9c57e1f0b4",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-04T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "24c157ca-adce-41de-a5a2-6ea80dab100a",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-04T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "4364db4d-7910-4225-8d10-dbf00faf1ff2",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-04T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "b93b35b3-72ef-4833-935b-aea99c5fd2e8",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-05T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "2ce5a1a1-ff48-45d3-8d73-077ad08192e3",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-05T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "0c9458e7-87cb-47e3-b249-7cf95a03678f",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-05T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "4981d30f-4a82-40ec-804f-54f973327a47",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-06T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "b9053d80-5279-4b10-91af-687d4518943c",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-06T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "a3d6b50d-9627-4cc3-904e-ea69b7ceff14",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-06T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "2f3a052a-b67e-4f0e-a142-7d2122d4a1ee",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-07T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "acf8cd96-43c4-4328-8060-d6a295c74acf",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-07T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "39292a6b-fbec-4018-8724-422135310a89",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-07T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "e86f9496-f21a-46c1-8f99-d58171a4d602",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-08T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "89569605-59b6-47f0-ae7a-22d50c80ed4b",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-08T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "9296148e-5abb-4810-af0e-6e8b822743e0",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-08T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "a0516dbc-9517-430c-b5ce-26f23f516c3f",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-09T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "98bdd5d5-026d-4dd1-90f1-cc5ebfe93dd2",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-09T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "ce5f6129-ce95-425b-af1c-406786d97b27",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-09T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "bd620ac3-243e-4fc1-87c4-861a6ee22292",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-10T18:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "5ea296f5-3b17-4edc-a7ce-11c4b5133c7e",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-10T19:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "04c7a97e-22ac-4c68-a372-ae75627c5b31",
+        "name": "Saunagus - Dalslaug",
+        "location": "Dalslaug",
+        "latitude": 64.1264,
+        "longitude": -21.7614,
+        "datetime": "2026-05-10T20:00:00Z",
+        "price": 1330.0,
+        "currency": "ISK",
+        "requirements": [
+            "Towel",
+            "Swimsuit"
+        ],
+        "hygiene_info": "Shower without swimsuit before entry",
+        "is_recurring": true,
+        "description": "Guided Saunagus session at Dalslaug. Arrive 10 min early."
+    },
+    {
+        "id": "d361952f-8aea-495d-9079-3a788736fb9e",
+        "name": "7-Step Ritual",
+        "location": "Sky Lagoon",
+        "latitude": 64.1235,
+        "longitude": -21.9372,
+        "datetime": "2026-05-04T14:00:00Z",
+        "price": 9900.0,
+        "currency": "ISK",
+        "requirements": [
+            "Swimsuit"
+        ],
+        "hygiene_info": "Luxury facilities, towels provided",
+        "is_recurring": true,
+        "description": "Premium experience at Sky Lagoon."
+    },
+    {
+        "id": "683a817f-65a6-449b-962a-982f1cf73c27",
+        "name": "Steam Bath Gus",
+        "location": "Laugarvatn Fontana",
+        "latitude": 64.2151,
+        "longitude": -20.7303,
+        "datetime": "2026-05-04T14:00:00Z",
+        "price": 4900.0,
+        "currency": "ISK",
+        "requirements": [
+            "Swimsuit"
+        ],
+        "hygiene_info": "Luxury facilities, towels provided",
+        "is_recurring": true,
+        "description": "Premium experience at Laugarvatn Fontana."
+    }
+]

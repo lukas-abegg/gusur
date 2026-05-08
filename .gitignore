@@ -1,0 +1,103 @@
+# =============================================================================
+# Gusur — top-level .gitignore for the mobile/ KMP app + scraper/ pipeline
+# =============================================================================
+
+# ----- Secrets (never commit) -----
+# Firebase service-account keys — same patterns as scraper/.gitignore for safety
+service-account.json
+*.serviceAccountKey.json
+*-firebase-adminsdk-*.json
+# Local env files that often hold tokens / DB URLs
+.env
+.env.*
+!.env.example
+
+# ----- macOS / OS noise -----
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ----- IDEs -----
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.fleet/
+*.swp
+*.swo
+*~
+
+# ----- Kotlin / Gradle (mobile/) -----
+.gradle/
+build/
+**/build/
+out/
+local.properties
+gradle-app.setting
+.gradletasknamecache
+hs_err_pid*
+.kotlin/
+
+# ----- Android -----
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Keep the debug APK output dir gitignored — it's huge and rebuilt on demand
+**/outputs/
+**/intermediates/
+
+# ----- iOS / Xcode -----
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+# CocoaPods (if introduced later)
+Pods/
+Podfile.lock
+
+# Compose Multiplatform / Kotlin Native
+**/kotlin-js-store/
+**/.cocoapods/
+*.framework/
+**/cocoapods.gradle.kts
+
+# ----- Firebase CLI -----
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.log
+
+# ----- Scraper (Python) -----
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Scraper output and cache — regenerated on every run
+scraper/places.json
+scraper/events.json
+scraper/.http_cache/
+
+# ----- Misc -----
+node_modules/
+*.bak
+*.tmp
+*.orig
